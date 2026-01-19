@@ -1,0 +1,57 @@
+<!--
+  File: index.html
+  Student: Mahtabin Tushi
+  Student Number: 000952184
+  Date: 2025-07-24
+  Course: COMP 10259 – Client Side Web Programming
+  Assignment 4 – Happy Chicken Catcher Game
+  Description:
+    Main HTML document for the SVG-based "Catch the Happy Chickens" game. It includes
+    the structure of the game interface: scoreboard, game area, movement buttons,
+    and links to the external JavaScript and CSS files.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Descriptive page title for the browser tab -->
+  <title>Catch the Happy Chickens!</title>
+  <!-- Linking to external CSS file as required -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <!-- Game heading displayed prominently at the top -->
+    <h1>Catch the Happy Chickens 🐥</h1>
+  </header>
+
+  <main>
+    
+      <!-- Score and lives panel reflecting game state -->
+      <div class="score-panel">
+        <p>Current Score: <span id="score">0</span></p>
+        <p>Remaining Lives: <span id="lives">10</span></p>
+      </div>
+
+      <!-- Control buttons tied to JavaScript functions for interactivity -->
+      <div class="controls">
+        <button onclick="moveBasketLeft()">⬅️ Move Left</button>
+        <button onclick="moveBasketRight()">Move Right ➡️</button>
+      </div>
+    
+
+    <!-- Interactive SVG game area where chickens and basket can be animated -->
+    <svg id="gameArea" width="400" height="500" aria-label="Game Board"></svg>
+  </main>
+
+  <footer>
+    <!-- Required copyright and identification footer -->
+    <p>&copy; 2025 Mahtabin Tushi | COMP 10259 - Game Project</p>
+  </footer>
+
+  <!-- Linking to external JS file for logic and DOM manipulation -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+/*
+  File: styles.css
+  Student: Mahtabin Tushi
+  Student Number: 000952184
+  Date: 2025-07-23
+  Description: CSS file for styling the Happy Chicken Catcher game including basket,
+  chicken, scoreboard, layout, and buttons.
+*/
+
+/* Reset and base layout styles for consistency across devices */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, sans-serif;
+  background-color: #b3ecff; /* Light sky blue background for cheerful tone */
+  text-align: center;
+}
+
+/* Consistent styling for top and bottom page sections */
+header, footer {
+  background-color: #f28e2b; /* Warm orange for contrast and visibility */
+  color: #ffffff; /* White text for readability */
+  padding: 1rem;
+}
+
+/* Main content padding for spacing */
+main {
+  padding: 1rem;
+}
+
+/* Styling the SVG canvas for game visuals */
+svg#gameArea {
+  background-color: #fff9c4; /* Light yellow for game board visibility */
+  border: 3px solid #bbb;     /* Grey border to visually frame game area */
+  display: block;
+  margin: 1rem auto;
+}
+
+
+/* Score panel styles to highlight game status */
+.score-panel {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 1em;
+}
+
+/* Button styles for user control actions */
+.controls button {
+  margin: 0.5em;
+  font-size: 1rem;
+  padding: 0.4em 1em; /* Comfortable size for touch/click interactions */
+}
+
+/* Range input styling for any interactive sliders (e.g. speed, size) */
+input[type="range"] {
+  width: 140px;
+  margin: 0.5em auto;
+  display: block; 
+}
